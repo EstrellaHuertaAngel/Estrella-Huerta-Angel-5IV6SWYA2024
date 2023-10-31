@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DES</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.3.0/crypto-js.js"></script>
+
+</head>
+<body>
+    <div class="div1">
+        <h1>Algoritmo DES</h1>
+        <hr>
+        <div>
+          <br>
+            <label for="archivo" class="text">Ingrese el archivo que contenga el texto que desee cifrar o descifrar:</label>
+            <br><br>
+            <input type="file" id="file" accept=".txt">
+            <br><br>
+            <label for="clave" class="text">Ingrese su clave secreta (8 caracteres):</label>
+            <br><br>
+            <input type="text" id="clave" class="input" maxlength="8"> 
+            <br><br>
+            <input type="button" class="btn" value="Cifrar" onclick="longitudClaveCifrar()">
+            <input type="button" value="Descifrar" class="btn" onclick="longitudClaveDescifrar()">
+            <br><br>
+            <label for="txt_descifrado" class="text">Texto descifrado:</label>
+            <textarea name="txt_area_descifrado" id="texto_descifrado" disabled></textarea>
+        </div>
+       
+</body>
+</html>
